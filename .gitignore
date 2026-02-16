@@ -1,5 +1,9 @@
+#environment variables
 venv/
-
 .venv
 .env
 /env
+
+test/
+
+src/
