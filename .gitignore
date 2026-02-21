@@ -2,8 +2,10 @@
 venv/
 .venv
 .env
-/env
+env/
+
 
 test/
 
-src/
+Logs/
+
