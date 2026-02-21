@@ -1,8 +1,12 @@
+__pycache__/
+
+
 #environment variables
 venv/
 .venv
 .env
 env/
+
 
 
 test/
