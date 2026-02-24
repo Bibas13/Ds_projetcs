@@ -12,6 +12,8 @@ import pymysql
 
 from dotenv import load_dotenv
 
+
+# to load data from mysql getting the information from .env file using load_dotenv
 load_dotenv()
 host=os.getenv("host")
 user = os.getenv("user")
@@ -33,7 +35,7 @@ def read_sql_data():
         logging.info(f"Connection Established {my_db}")
 
 
-        df = pd.read_sql_query("Select * FROM StudentsPerformance",my_db)
+        df = pd.read_sql_query("Select * FROM StudentsPerformance: ",my_db)
         
 
         print(df.head())
