@@ -32,10 +32,10 @@ def read_sql_data():
             password=password ,
             db=db
         )
-        logging.info(f"Connection Established {my_db}")
+        logging.info(f"Connection Established: {my_db}")
 
 
-        df = pd.read_sql_query("Select * FROM StudentsPerformance: ",my_db)
+        df = pd.read_sql_query("Select * FROM StudentsPerformance ",my_db)
         
 
         print(df.head())
