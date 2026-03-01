@@ -21,10 +21,8 @@ def error_message_detail(error,error_details:sys):
     
     
 
-
-
 class Custom_Exception(Exception):
-    def __init__(self, error_message:str,error_details:sys):
+    def __init__(self, error_message: str,error_details:sys):
         super().__init__(error_message)
         self.error_message = error_message_detail(error_message,error_details)
 

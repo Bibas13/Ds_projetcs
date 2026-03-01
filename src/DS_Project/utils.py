@@ -9,7 +9,6 @@ from src.DS_Project.exception import Custom_Exception
 import pandas as pd
 
 import pymysql
-
 from dotenv import load_dotenv
 
 
