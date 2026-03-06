@@ -15,7 +15,7 @@ if __name__ == "__main__":
         logging.info("Trying to ingest data")
         dataingestion = DataIngestion()
         dataingestion.initiate_data_ingestion()
-    except Exception as e:
+    except Exception as er:
         logging.info("Error is raised ")
-        raise Custom_Exception(e,sys) 
+        raise Custom_Exception(er,sys) from er
     
